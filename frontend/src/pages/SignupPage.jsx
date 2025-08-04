@@ -61,7 +61,7 @@ const SignupPage = () => {
                 <input
                   type="text"
                   className="input w-full pl-10 focus:outline-none focus:ring-0 focus:border-base-content/60"
-                  placeholder="Bit Wise Nexus"
+                  placeholder="Your Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
