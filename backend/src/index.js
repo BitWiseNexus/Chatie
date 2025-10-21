@@ -19,7 +19,7 @@ const __dirname = path.resolve();
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-  origin: "*",
+  origin: import.meta.env.MODE === "development" ? "http://localhost:5173" : process.env.FRONTEND_URL,
   credentials: true
 }));
 
